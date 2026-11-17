@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edgar Reyes · Mechanical Engineer</title>
+<meta name="description" content="Portfolio of Edgar Reyes, mechanical engineer: aerospace structures, autonomous aircraft, design, build and test.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#121214;--body:#2a2a2e;--muted:#5b5b63;--line:#e4e4e7;--bg:#ffffff;--soft:#f4f4f5;--accent:#1d4ed8;--dark:#0d0f13}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent)}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;color:var(--ink);margin:0;text-wrap:balance}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+nav .name{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--ink);text-decoration:none;font-size:18px}
+nav ul{list-style:none;display:flex;gap:24px;margin:0;padding:0}
+nav ul a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav ul a:hover{color:var(--ink)}
+.hero{background:var(--dark);color:#d4d4d8}
+.hero .top{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-top:80px;padding-bottom:80px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#93b4ff;margin:0 0 16px}
+.hero h1{color:#fff;font-size:clamp(40px,6vw,64px);line-height:1.02;letter-spacing:-.02em}
+.hero p.lead{font-size:18px;margin:20px 0 28px;max-width:34em;color:#c4c4cc}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none}
+.btn.primary{background:#fff;color:var(--dark)}
+.btn.ghost{border:1px solid #3f3f46;color:#fff}
+.btn:hover{opacity:.88}
+.hero figure{margin:0;background:#f4f4f5;border-radius:10px;overflow:hidden}
+.hero figure img{width:100%;aspect-ratio:4/3;object-fit:contain}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #23262d}
+.stats div{padding:24px;border-right:1px solid #23262d}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:'Space Grotesk',sans-serif;font-size:28px;color:#fff}
+.stats span{font-size:13px;color:#a1a1aa}
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.num{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--accent);font-size:14px}
+section h2{font-size:clamp(28px,4vw,38px);letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:14px;font-weight:500;margin:4px 0 28px}
+.project{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.project.flip .media{order:2}
+.media{display:grid;gap:14px}
+.media.two{grid-template-columns:1fr 1fr}
+figure{margin:0}
+figure img{width:100%;border-radius:8px;object-fit:cover;background:var(--soft)}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.copy p{margin:0 0 16px;font-size:16px}
+.copy h3{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-family:Inter,sans-serif;font-weight:600;margin:24px 0 8px}
+.copy ul{margin:0;padding-left:20px}
+.copy li{margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.tags li{font-size:12px;font-weight:500;border:1px solid #d4d4d8;border-radius:4px;padding:4px 10px;margin:0;color:var(--ink)}
+.statrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 20px}
+.statrow div{border:1px solid var(--line);border-radius:8px;padding:16px}
+.statrow b{display:block;font-family:'Space Grotesk',sans-serif;font-size:26px;color:var(--accent)}
+.statrow span{font-size:13px;color:var(--muted)}
+.exp{display:grid;gap:28px}
+.exp article{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:start;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.exp article:last-child{border-bottom:0}
+.exp h3{font-size:20px}
+.exp .when{font-size:13px;color:var(--muted);font-weight:500;margin:2px 0 10px}
+.note{font-size:13px;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.skills h3{font-size:16px;margin-bottom:8px}
+.skills p{margin:0;font-size:15px}
+footer{background:var(--dark);color:#a1a1aa;padding:72px 0}
+footer h2{color:#fff;font-size:clamp(28px,4vw,40px)}
+footer p{max-width:36em}
+footer a.mail{color:#fff;font-size:20px;font-weight:600}
+footer small{display:block;margin-top:48px;color:#71717a}
+@media (max-width:860px){
+  nav ul{display:none}
+  .hero .top,.project,.exp article{grid-template-columns:1fr}
+  .project.flip .media{order:0}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats div:nth-child(2){border-right:0}
+  .stats div{border-bottom:1px solid #23262d}
+  .skills{grid-template-columns:1fr 1fr}
+  .exp article figure{max-width:280px}
+  section{padding:64px 0}
+}
+@media (max-width:520px){.media.two,.statrow,.skills{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="name" href="#top">Edgar Reyes</a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap top">
+    <div>
+      <p class="eyebrow">Mechanical Engineer · UCLA 2026</p>
+      <h1>I design hardware, then build and test it.</h1>
+      <p class="lead">Structures engineer at Boeing. Previously supported satellite integration, tested aerospace composites, and led hardware for UCLA's autonomous aircraft team.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn ghost" href="mailto:edgar.re278@gmail.com">Email me</a>
+      </div>
+    </div>
+    <figure>
+      <img src="images/vtol-cad.jpg" alt="SolidWorks render of a VTOL inspection drone" width="801" height="600">
+    </figure>
+  </div>
+  <div class="wrap stats">
+    <div><b>3</b><span>Boeing programs: 777, 747, 787</span></div>
+    <div><b>1</b><span>communications satellite integrated</span></div>
+    <div><b>100+</b><span>composite specimens tested</span></div>
+    <div><b>CTO</b><span>UAS@UCLA autonomous aircraft team</span></div>
+  </div>
+</header>
+
+<main id="projects">
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="num">01</span><h2>3D-Printed VTOL Inspection Drone</h2></div>
+    <p class="meta">Personal project · Structural design and CAD owner · In progress</p>
+    <div class="project">
+      <div class="media two">
+        <figure>
+          <img src="images/vtol-cad.jpg" alt="SolidWorks render of the VTOL airframe" width="801" height="600" style="aspect-ratio:4/3;object-fit:contain">
+          <figcaption>SolidWorks model: printed fuselage and wings on carbon-fiber booms.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wing-print.jpg" alt="Printed wing section on a 3D printer build plate" width="1600" height="1066" style="aspect-ratio:4/3">
+          <figcaption>A wing section fresh off the printer.</figcaption>
+        </figure>
+      </div>
+      <div class="copy">
+        <p>An autonomous fixed-wing VTOL inspection drone, with four lift motors and one forward motor, built around a fully 3D-printed structure on carbon-fiber spars. Vertical takeoff lets it launch anywhere, while the wing gives it the range to cover large sites.</p>
+        <ul>
+          <li>Modeled a lofted, hollow fuselage in SolidWorks and split it into printable sections joined by tongue-and-groove interfaces, so parts print in-house and swap quickly after damage.</li>
+          <li>Designing mounts and access for a full avionics stack: Pixhawk flight controller, RTK GPS, telemetry, airspeed, optical flow and lidar.</li>
+          <li>Taking components from concept through CAD to printed hardware.</li>
+        </ul>
+        <ul class="tags"><li>SolidWorks</li><li>Lofts and shells</li><li>FDM printing</li><li>PX4</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="num">02</span><h2>Autonomous Aircraft, UAS@UCLA</h2></div>
+    <p class="meta">CTO (2025 to 2026) · Hardware Lead (2023 to 2024)</p>
+    <div class="project flip">
+      <div class="media">
+        <figure>
+          <img src="images/uas-team.jpg" alt="UAS@UCLA team holding their competition drone" width="937" height="620">
+          <figcaption>The team with our competition drone.</figcaption>
+        </figure>
+      </div>
+      <div class="copy">
+        <p>UCLA's student team designs, builds and flies autonomous aircraft for national competition. I joined as Hardware Lead and was promoted to CTO.</p>
+        <h3>What I did</h3>
+        <ul>
+          <li>Led system-level design and testing of autonomous drones and fixed-wing aircraft across structures, propulsion and thermal.</li>
+          <li>Took the competition drone from concept through FEA, prototyping, integration and flight.</li>
+          <li>Coordinated mechanical, avionics and software leads.</li>
+        </ul>
+        <h3>Engineering details</h3>
+        <ul>
+          <li>Lightweight payload structures printed in a PLA-carbon fiber blend, balancing stiffness, weight and printability.</li>
+          <li>Vibration testing with fast design iteration between tests.</li>
+          <li>Propeller material testing for mechanical and thermal performance.</li>
+        </ul>
+        <ul class="tags"><li>SolidWorks</li><li>Ansys</li><li>PLA-CF</li><li>Vibration testing</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="num">03</span><h2>Suspension, Bruin Formula Racing</h2></div>
+    <p class="meta">Suspension subteam engineer · 2023 to 2025</p>
+    <div class="project">
+      <div class="media">
+        <figure>
+          <img src="images/bruin-car.jpg" alt="Bruin Formula Racing car chassis in the shop" width="698" height="609">
+          <figcaption>The Bruin Formula Racing car in the shop.</figcaption>
+        </figure>
+      </div>
+      <div class="copy">
+        <ul>
+          <li>Designed control arm fixtures and axle components in SolidWorks.</li>
+          <li>Validated designs with FEA under static and dynamic race loading.</li>
+          <li>Improved stiffness-to-weight through geometry optimization and material trade studies.</li>
+        </ul>
+        <ul class="tags"><li>SolidWorks</li><li>FEA</li><li>Trade studies</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="num">04</span><h2>Composite Testing and Fixtures, Nexx Technologies</h2></div>
+    <p class="meta">Engineer intern · Mitsubishi Gas Chemical America · 2024</p>
+    <div class="project flip">
+      <div class="media">
+        <figure>
+          <img src="images/cf-test.jpg" alt="Carbon fiber specimen clamped in tensile test grips" width="513" height="693" style="max-height:520px">
+          <figcaption>A carbon fiber specimen in the test grips.</figcaption>
+        </figure>
+      </div>
+      <div class="copy">
+        <div class="statrow">
+          <div><b>100+</b><span>specimens tested in tension, flexure and shear</span></div>
+          <div><b>15%</b><span>higher thermal resistance from refined resins</span></div>
+          <div><b>DSC</b><span>thermal characterization</span></div>
+        </div>
+        <ul>
+          <li>Ran mechanical testing and failure analysis to support aerospace material qualification.</li>
+          <li>Designed custom tooling and fixtures in SolidWorks and Creo that improved dimensional accuracy and repeatability in production.</li>
+          <li>Worked with R&amp;D on resin formulation, using stress, modulus and DSC data to guide changes.</li>
+        </ul>
+        <ul class="tags"><li>SolidWorks</li><li>Creo</li><li>Mechanical testing</li><li>DSC</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><h2>Professional Experience</h2></div>
+    <p class="meta">Design details from Boeing are proprietary and not shown.</p>
+    <div class="exp">
+      <article>
+        <div>
+          <h3>Structural and Payload Design Engineer, Boeing</h3>
+          <p class="when">Long Beach, CA · June 2026 to present</p>
+          <p>Interior structures for the 777, 747 and 787: panel and clamp design, GD&amp;T, Model-Based Definition, bolted joint torque analysis, and engineering dispositions with manufacturing and stress.</p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <h3>Production Engineering Intern, Boeing</h3>
+          <p class="when">El Segundo, CA · June 2025 to September 2025</p>
+          <p>Supported integration of the Satelit Nusantara Lima communications satellite: launch-operations tooling and visual aids, root-cause investigations during final integration, and installation tracking in Teamcenter, working with thermal, electrical and systems engineers.</p>
+        </div>
+        <figure>
+          <img src="images/satellite.jpg" alt="Communications satellite in a clean room during integration" width="474" height="711">
+          <figcaption>Satellite in final integration. Photo: Boeing.</figcaption>
+        </figure>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><h2>Skills</h2></div>
+    <p class="meta">B.S. Mechanical Engineering, University of California, Los Angeles · 2026</p>
+    <div class="skills">
+      <div><h3>CAD</h3><p>SolidWorks, Creo, Fusion. GD&amp;T, Model-Based Definition, rapid prototyping.</p></div>
+      <div><h3>Analysis</h3><p>Ansys and Abaqus FEA, static and dynamic loading. Bolted joint and torque analysis.</p></div>
+      <div><h3>Materials and test</h3><p>Composites, failure and vibration testing, DSC thermal analysis.</p></div>
+      <div><h3>Tools</h3><p>Siemens Teamcenter. Python and MATLAB for data processing.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's build something.</h2>
+    <p>I'm looking for hands-on mechanical roles in aerospace, space and robotics, where I can own hardware from design through test.</p>
+    <a class="mail" href="mailto:edgar.re278@gmail.com">edgar.re278@gmail.com</a>
+    <small>© 2026 Edgar Reyes</small>
+  </div>
+</footer>
+
+</body>
+</html>
